@@ -1,21 +1,83 @@
-# ElasticNet Grid Search Model
+# Machine Learning Regression Projects
 
 ## Overview
 
-This project demonstrates the implementation of an **ElasticNet Regression Model** with **Grid Search Cross Validation** using Python and Scikit-learn. The notebook focuses on building a machine learning pipeline for predicting prices based on multiple input features.
+This repository contains multiple machine learning regression projects implemented using Python and Scikit-learn. The projects focus on predictive modeling, regression analysis, feature engineering, and hyperparameter tuning techniques.
 
-The project includes:
+The repository currently includes:
 
-* Data loading and preprocessing
-* Feature scaling using StandardScaler
-* Train-test data splitting
-* ElasticNet regression model building
-* Hyperparameter tuning using GridSearchCV
-* Model evaluation using regression metrics
+* Linear Regression
+* Polynomial Regression
+* ElasticNet Regression with Grid Search Cross Validation
+
+These projects demonstrate the complete machine learning workflow, from data preprocessing and exploratory analysis to model training, optimization, and evaluation.
 
 ---
 
-## Technologies Used
+# Projects Included
+
+## 1. Linear & Polynomial Regression
+
+### Description
+
+This project demonstrates the implementation of:
+
+* **Linear Regression**
+* **Polynomial Regression**
+
+The models are trained to predict car prices using automobile-related features.
+
+### Key Concepts Covered
+
+* Data preprocessing
+* Exploratory Data Analysis (EDA)
+* Feature engineering
+* Regression modeling
+* Linear vs Non-linear relationships
+* Model evaluation metrics
+
+### Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Jupyter Notebook
+
+### Evaluation Metrics
+
+* Mean Absolute Error (MAE)
+* Mean Squared Error (MSE)
+* Root Mean Squared Error (RMSE)
+* R² Score
+
+---
+
+## 2. ElasticNet Grid Search Regression
+
+### Description
+
+This project implements an **ElasticNet Regression Model** with **GridSearchCV** for hyperparameter optimization.
+
+ElasticNet combines:
+
+* **L1 Regularization (Lasso Regression)**
+* **L2 Regularization (Ridge Regression)**
+
+The project focuses on improving model performance and reducing overfitting through cross-validation and parameter tuning.
+
+### Key Concepts Covered
+
+* Feature scaling
+* Train-test splitting
+* ElasticNet regression
+* Hyperparameter tuning
+* Cross validation
+* Performance optimization
+
+### Technologies Used
 
 * Python
 * Pandas
@@ -23,58 +85,12 @@ The project includes:
 * Scikit-learn
 * Jupyter Notebook
 
----
-
-## Project Workflow
-
-### 1. Data Loading
-
-The dataset is imported and explored using Pandas.
-
-### 2. Feature and Target Separation
-
-* Independent variables (`X`) are separated from the target variable (`y`).
-* The target variable used in this project is:
-
-  * `price in $`
-
-### 3. Train-Test Split
-
-The dataset is divided into training and testing sets using:
-
-* `70%` training data
-* `30%` testing data
-
-### 4. Feature Scaling
-
-Feature scaling is applied using `StandardScaler` to normalize the data before training the model.
-
-### 5. ElasticNet Regression
-
-An ElasticNet model is created using Scikit-learn.
-
-ElasticNet combines:
-
-* **Lasso Regression (L1 Regularization)**
-* **Ridge Regression (L2 Regularization)**
-
-This helps improve model generalization and reduce overfitting.
-
-### 6. Hyperparameter Tuning with GridSearchCV
-
-Grid Search Cross Validation is used to find the best combination of:
+### Hyperparameters Tuned
 
 * `alpha`
 * `l1_ratio`
 
-The model uses:
-
-* `10-fold Cross Validation`
-* `Negative Mean Squared Error` as the scoring metric
-
-### 7. Model Evaluation
-
-The trained model is evaluated using:
+### Evaluation Metrics
 
 * Mean Squared Error (MSE)
 * Root Mean Squared Error (RMSE)
@@ -82,65 +98,89 @@ The trained model is evaluated using:
 
 ---
 
-## Model Performance
-
-* Average prediction error: **~$3251**
-* R² Score: **0.85**
-
-The model explains approximately **85% of the variance** in the dataset, indicating strong predictive performance.
-
----
-
-## Repository Structure
+# Repository Structure
 
 ```bash
+├── LINEAR& POLYNOMIAL REGRESSION.ipynb
 ├── Elasticnet Grid Search model.ipynb
 ├── README.md
 ```
 
 ---
 
-## How to Run the Project
+# Skills Demonstrated
 
-### Clone the Repository
+This repository demonstrates practical knowledge of:
+
+* Machine Learning Fundamentals
+* Regression Algorithms
+* Data Preprocessing
+* Feature Engineering
+* Hyperparameter Tuning
+* Model Evaluation
+* Cross Validation
+* Data Visualization
+* Python for Data Science
+
+---
+
+# Libraries & Tools
+
+```python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Scikit-learn
+Jupyter Notebook
+```
+
+---
+
+# How to Run the Projects
+
+## 1. Clone the Repository
 
 ```bash
 git clone <your-repository-link>
 ```
 
-### Install Dependencies
+## 2. Install Required Libraries
 
 ```bash
-pip install pandas numpy scikit-learn jupyter
+pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 ```
 
-### Run the Notebook
+## 3. Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-Open the notebook file and execute the cells sequentially.
+## 4. Open Any Notebook
+
+Run the notebook cells sequentially to reproduce the results.
 
 ---
 
-## Learning Outcomes
+# Learning Outcomes
 
-Through this project, you can understand:
+By exploring these projects, you can understand:
 
-* Regression modeling
-* Data preprocessing techniques
-* Feature scaling
-* Hyperparameter tuning
-* Cross validation
-* Performance evaluation of machine learning models
+* How regression algorithms work
+* Differences between linear and non-linear regression
+* Importance of data preprocessing
+* Model optimization using Grid Search
+* Performance evaluation techniques
+* Real-world machine learning workflows
 
 ---
 
-## Future Improvements
+# Future Improvements
 
-* Add data visualization for better insights
-* Compare ElasticNet with other regression algorithms
-* Deploy the trained model using Flask or Streamlit
-* Automate the ML pipeline
-
+* Add advanced regression models
+* Perform feature selection techniques
+* Implement model deployment using Flask or Streamlit
+* Add interactive dashboards
+* Compare additional machine learning algorithms
+* Improve visualization and reporting
